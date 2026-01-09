@@ -7,16 +7,6 @@ The goal of this project is to provide reusable, production-oriented data ingest
 source layer of a data engineering pipeline. The extracted data is normalised and persisted in structured formats,
 making it suitable for downstream transformation, analytics, or storage workflows.
 
-## Role in a Data Engineering Pipeline
-This repository represents the data ingestion layer of a data engineering pipeline. Each project is designed to
-acquire data from external web sources, parse and normalise the extracted content, and persist the results in structured
-formats such as SQLite databases or CSV files.
-
-The outputs produced by these ingestion jobs are intentionally decoupled from downstream processing and are suitable for
-consumption by batch ETL or ELT workflows, analytical processes, or data loading jobs. Transformation, aggregation, and
-serving layers are intentionally out of scope, allowing this repository to focus solely on reliable and reusable data
-acquisition.
-
 ## Tools & Technologies
 
 This project uses the following tools and technologies:
@@ -83,4 +73,5 @@ Please note that the web scraping scripts in this repository rely on extracting 
 2. **Update the Scraper**: Once you've identified any changes, update the scraping logic in the script (e.g., change the CSS selectors, update the parsing logic).
 
 3. **Test the Script**: After making updates, thoroughly test the script to ensure it works as expected. Verify that all necessary data is extracted and that the program doesn't break with new changes.
+
 
