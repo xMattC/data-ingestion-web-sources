@@ -1,12 +1,21 @@
 
-# Web Scraping projects
+# Data Ingestion Web Source
 
-This repository contains various web scraping projects for different websites. Each project is contained within its own
-folder, and you can find specific documentation (README.md) and relevant files for each scraper inside the respective
-folders.
+This repository contains a collection of web data ingestion components, sometimes referred to as “scrapers”, designed to acquire data from external web sources. Each project is implemented as an independent ingestion job and is contained within its own folder, with specific documentation (README.md) and relevant files provided for each scraper.
 
-The goal of this project is to provide reusable scraping solutions for common use cases and to demonstrate web scraping techniques.
+The goal of this project is to provide reusable, production-oriented data ingestion solutions that can serve as the
+source layer of a data engineering pipeline. The extracted data is normalised and persisted in structured formats,
+making it suitable for downstream transformation, analytics, or storage workflows.
 
+## Role in a Data Engineering Pipeline
+This repository represents the data ingestion layer of a data engineering pipeline. Each project is designed to
+acquire data from external web sources, parse and normalise the extracted content, and persist the results in structured
+formats such as SQLite databases or CSV files.
+
+The outputs produced by these ingestion jobs are intentionally decoupled from downstream processing and are suitable for
+consumption by batch ETL or ELT workflows, analytical processes, or data loading jobs. Transformation, aggregation, and
+serving layers are intentionally out of scope, allowing this repository to focus solely on reliable and reusable data
+acquisition.
 
 ## Tools & Technologies
 
@@ -74,3 +83,4 @@ Please note that the web scraping scripts in this repository rely on extracting 
 2. **Update the Scraper**: Once you've identified any changes, update the scraping logic in the script (e.g., change the CSS selectors, update the parsing logic).
 
 3. **Test the Script**: After making updates, thoroughly test the script to ensure it works as expected. Verify that all necessary data is extracted and that the program doesn't break with new changes.
+
