@@ -1,7 +1,7 @@
 
 # Data Ingestion Web Source
 
-This repository contains a collection of web data ingestion components, sometimes referred to as “scrapers”, designed to acquire data from external web sources. Each project is implemented as an independent ingestion job and is contained within its own folder, with specific documentation (README.md) and relevant files provided for each scraper.
+This repository contains a collection of web data ingestion components, or “web-scrapers”, designed to acquire data from external web sources. Each project is implemented as an independent ingestion job and is contained within its own folder, with specific documentation (README.md) and relevant files provided for each scraper.
 
 The goal of this project is to provide reusable, production-oriented data ingestion solutions that can serve as the
 source layer of a data engineering pipeline. The extracted data is normalised and persisted in structured formats,
@@ -73,5 +73,6 @@ Please note that the web scraping scripts in this repository rely on extracting 
 2. **Update the Scraper**: Once you've identified any changes, update the scraping logic in the script (e.g., change the CSS selectors, update the parsing logic).
 
 3. **Test the Script**: After making updates, thoroughly test the script to ensure it works as expected. Verify that all necessary data is extracted and that the program doesn't break with new changes.
+
 
 
